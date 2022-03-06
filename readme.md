@@ -91,6 +91,14 @@ for d in np.arange(100, 2200, 200):
 
 ### 1. PatchMatch
 
+[PatchMatch匹配部分理解（一）](https://blog.csdn.net/roy_zhaoli/article/details/89065676)
+
+CODES:
+
+
+
+https://github.com/harveyslash/PatchMatch
+
 
 
 ## 3.深度学习
