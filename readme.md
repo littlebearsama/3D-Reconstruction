@@ -2,9 +2,37 @@
 
 # 一、立体匹配（stereo vision）
 
+1. 立体匹配方法排名网站：（方法 数据集 排名 代码）
+
+https://vision.middlebury.edu/stereo/
+
+![image-20220306223145013](readme.assets/image-20220306223145013.png)
+
+2. cvkit-1.7.0：middlebury stereo 评价工具
+
+使用方法:
+
+* 使用plyv进行可视化
+
+>./plyv.exe ../example/1097_disp.pfm ../example/1097_param.txt
+
+![image-20220307141759660](readme.assets/image-20220307141759660.png)
+
+* 使用plycmd保存点云
+
+>./plycmd.exe ../example/1097_disp.pfm -out ../example/1097.ply
+
+* 使用sv打开和显示.pfm（视差）和.ppm（彩色图）文件
+
+> ./sv.exe ../example/1097_disp.pfm ../example.1097_rgb.ppm
+
+3. [middlebury PFM格式读取](https://blog.csdn.net/weixin_44899143/article/details/89186891)
+
+   
 
 
-## 0. 立体匹配精度评价
+
+## 0. 立体匹配相机模组精度估算
 
 根据自己模组的模型参数，算法精度，得到该参数下的模组的精度。
 
@@ -91,21 +119,37 @@ for d in np.arange(100, 2200, 200):
 
 ### 1. PatchMatch
 
+#### 相关：
+
 [PatchMatch匹配部分理解（一）](https://blog.csdn.net/roy_zhaoli/article/details/89065676)
 
-CODES:
+#### CODES:
 
-
+CUDA版本
 
 https://github.com/harveyslash/PatchMatch
 
+李博版本：
 
+https://github.com/ethan-li-coding/PatchMatchStereo
+
+[nebula-beta](https://github.com/nebula-beta)：
+
+https://github.com/nebula-beta/PatchMatch
+
+https://github.com/nebula-beta/PatchMatchCuda
 
 ## 3.深度学习
 
-[详解深度学习三维重建网络：MVSNet、PatchMatchNet、JDACS-MS](https://mp.weixin.qq.com/s/KSv4pk1sGVx1-vWQjW6HFg)
+### A.数据集
 
+[middlebury](https://vision.middlebury.edu/stereo/data/)
 
+[2014 Stereo datasets with ground truth](https://vision.middlebury.edu/stereo/data/scenes2014/#description)
+
+数据集制作方法：
+
+ D. Scharstein, H. Hirschmüller, Y. Kitajima, G. Krathwohl, N. Nesic, X. Wang, and P. Westling. [High-resolution stereo datasets with subpixel-accurate ground truth](http://www.cs.middlebury.edu/~schar/papers/datasets-gcpr2014.pdf). In *German Conference on Pattern Recognition (GCPR 2014), Münster, Germany,* September 2014.
 
 ## 4. 相关资讯与资料
 
@@ -128,6 +172,18 @@ https://github.com/harveyslash/PatchMatch
 
 
 # 三、线激光
+
+
+
+# 四、MVS、SFM
+
+在线排名网站：
+
+https://vision.middlebury.edu/mview/eval/
+
+![image-20220306223616341](readme.assets/image-20220306223616341.png)
+
+[详解深度学习三维重建网络：MVSNet、PatchMatchNet、JDACS-MS](https://mp.weixin.qq.com/s/KSv4pk1sGVx1-vWQjW6HFg)
 
 
 
