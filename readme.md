@@ -157,6 +157,8 @@ https://github.com/nebula-beta/PatchMatchCuda
 
 [双目立体视觉“新生”](https://mp.weixin.qq.com/s/Yo1oy5GSu8cJTPeiPH1ESQ)
 
+[NERF](https://blog.csdn.net/moxibingdao/article/details/126113422)
+[2022 urban-radiance-fields](https://urban-radiance-fields.github.io/)
 ### B.资料
 
 
