@@ -162,6 +162,12 @@ https://github.com/nebula-beta/PatchMatchCuda
 [2022 urban-radiance-fields](https://urban-radiance-fields.github.io/)
 ### B.资料
 
+基于神经渲染的下一代真实感仿真【block nerf】
+https://zhuanlan.zhihu.com/p/541893317?utm_source=wechat_session&utm_medium=social&utm_oi=926908746985271296&utm_campaign=shareopn
+
+
+nerf_pl:
+https://github.com/kwea123/nerf_pl
 
 
 # 二、双目结构光
